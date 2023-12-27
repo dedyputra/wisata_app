@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_app/screens/screen.dart';
 
 // detail Screen App
 class Screen extends StatelessWidget {
@@ -7,6 +6,10 @@ class Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
