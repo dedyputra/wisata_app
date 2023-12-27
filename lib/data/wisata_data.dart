@@ -33,23 +33,24 @@ var wisataList = [
     imageUrls: [
       'https://salsawisata.com/wp-content/uploads/2023/07/alun-alun-sidoarjo-alamat.jpg',
       'https://channel9.id/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-21-at-15.03.04.jpeg',
-      '',
-      '',
+      'https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2023/09/29/WhatsApp-Image-2023-09-29-at-132115-1778690519.jpg',
+      'https://salsawisata.com/wp-content/uploads/2023/07/spot-foto-di-alun-alun-kota-sidoarjo.jpg',
     ],
     isFavorite: false,
   ),
 
 // wisata 3
   Wisata(
-    name: '',
+    name: 'Candi Pari',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
-    description: '',
-    built: 'Tahun',
+    description:
+        'Candi Pari adalah sebuah peninggalan masa klasik Indonesia yang terletak di Desa Candipari, Kecamatan Porong, Kabupaten Sidoarjo, Provinsi Jawa Timur. Lokasinya sekitar 2 km ke arah barat laut dari pusat semburan Lumpur Lapindo.',
+    built: 'Tahun 1293',
     type: 'Wisata',
-    imageAsset: 'images/',
+    imageAsset: 'images/CandiPari.jpg',
     imageUrls: [
-      '',
-      '',
+      'https://kebudayaan.kemdikbud.go.id/bpcbjatim/wp-content/uploads/sites/33/2022/11/1-11.jpg',
+      'https://kebudayaan.kemdikbud.go.id/bpcbjatim/wp-content/uploads/sites/33/2022/11/2-7.jpg',
       '',
       '',
     ],
@@ -58,7 +59,7 @@ var wisataList = [
 
 // wisata 4
   Wisata(
-    name: '',
+    name: 'Kampoeng Batik Jetis',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -75,7 +76,7 @@ var wisataList = [
 
 // wisata 5
   Wisata(
-    name: '',
+    name: 'Legok Asri Suko Legok',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -92,7 +93,7 @@ var wisataList = [
 
 // wisata 6
   Wisata(
-    name: '',
+    name: 'Makam Dewi Sekardadu',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -109,7 +110,7 @@ var wisataList = [
 
 // wisata 7
   Wisata(
-    name: '',
+    name: 'Monumen Jayandaru Sidoarjo',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -126,7 +127,7 @@ var wisataList = [
 
 // wisata 8
   Wisata(
-    name: '',
+    name: 'Museum Mpu Tantular',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -143,7 +144,7 @@ var wisataList = [
 
 // wisata 9
   Wisata(
-    name: '',
+    name: 'Pantai Kepentingan',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -160,7 +161,7 @@ var wisataList = [
 
 // wisata 10
   Wisata(
-    name: '',
+    name: 'Pulau Sarinah Tlocor',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -177,7 +178,7 @@ var wisataList = [
 
 // wisata 11
   Wisata(
-    name: '',
+    name: 'Taman Abhirama',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
@@ -194,7 +195,7 @@ var wisataList = [
 
 // wisata 12
   Wisata(
-    name: '',
+    name: 'Wisata Lumpur Lapindo',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description: '',
     built: 'Tahun',
