@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_app/screens/screen.dart';
+import 'package:wisata_app/screens/DetailScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       title: 'Objek Wisata Sidoarjo',
-      home: Screen(),
+      home: DetailScreen(),
     );
   }
 }

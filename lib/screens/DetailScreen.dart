@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 // detail Screen App
-class Screen extends StatelessWidget {
-  const Screen({super.key});
+// ngoding flutter asik//
+class DetailScreen extends StatelessWidget {
+  const DetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
