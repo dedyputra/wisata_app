@@ -5,10 +5,10 @@ import 'package:wisata_app/models/wisata.dart';
 var wisataList = [
 // wisata 1
   Wisata(
-    name: 'Alas Prombon',
+    name: 'Alas Prambon',
     location: 'Kabupaten Sidoarjo, Jawa Timur',
     description:
-        'Alas Prambon memiliki sejumlah fasilitas yang cukup memadai meliputi permainan outbound , pertanian, peternakan, perikanan, kolam renang, kamar mandi, mushola, kolam lumpur, dll. Alas Prambon melayani outbound tingkat PG ,TK ,SD , SMP , SMA sd. DEWASA .',
+        'Alas Prambon memiliki sejumlah fasilitas yang cukup memadai meliputi permainan outbound, pertanian, peternakan, perikanan, kolam renang, kamar mandi, mushola, kolam lumpur, dll. Alas Prambon melayani outbound tingkat PG ,TK ,SD , SMP , SMA sd. DEWASA.',
     built: 'Tahun 2013',
     type: 'Wisata',
     imageAsset: 'images/AlasPrambon.jpg',
