@@ -1,4 +1,5 @@
 import 'package:wisata_app/models/wisata.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // Data Objek Wisata Kabupaten Sidoarjo Jatim
 
