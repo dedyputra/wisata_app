@@ -1,6 +1,6 @@
 import 'package:wisata_app/models/wisata.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // detail Screen App
 // ngoding flutter asik
@@ -84,7 +84,7 @@ class DetailScreen extends StatelessWidget {
                           color: Colors.blue,
                         ),
                         const SizedBox(
-                          width: 10,
+                          width: 12,
                         ),
                         const SizedBox(
                           width: 80,
@@ -104,7 +104,7 @@ class DetailScreen extends StatelessWidget {
                           color: Colors.deepOrange,
                         ),
                         const SizedBox(
-                          width: 10,
+                          width: 12,
                         ),
                         const SizedBox(
                           width: 80,
@@ -125,7 +125,7 @@ class DetailScreen extends StatelessWidget {
                           color: Colors.greenAccent,
                         ),
                         const SizedBox(
-                          width: 10,
+                          width: 12,
                         ),
                         const SizedBox(
                           width: 80,
@@ -149,13 +149,13 @@ class DetailScreen extends StatelessWidget {
                     const Text(
                       'Deskripsi',
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 17,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
 
                     const SizedBox(
-                      height: 16,
+                      height: 17,
                     ),
                     Text(
                       wisata.description,
@@ -179,17 +179,23 @@ class DetailScreen extends StatelessWidget {
                       const Text(
                         'Galeri Wisata',
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 17,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       const SizedBox(
                         height: 16,
                       ),
-                      const SizedBox(),
+                      const SizedBox(
+                        height: 100,
+                        //  durung isi iki
+                      ),
                       const SizedBox(
                         height: 4,
                       ),
+                      const Text('Dokumentasi Wisata',
+                          style:
+                              TextStyle(fontSize: 16, color: Colors.black87)),
                     ]),
               ),
             ],
