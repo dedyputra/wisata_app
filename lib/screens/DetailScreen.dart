@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:wisata_app/models/wisata.dart';
@@ -205,7 +203,7 @@ class DetailScreen extends StatelessWidget {
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(12),
                                     border: Border.all(
-                                      color: Colors.deepOrange.shade100,
+                                      color: Colors.deepPurple.shade100,
                                       width: 2,
                                     ),
                                   ),
