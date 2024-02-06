@@ -1,3 +1,7 @@
+import 'dart:html';
+
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:photo_view/photo_view.dart';
 import 'package:wisata_app/models/wisata.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -186,9 +190,46 @@ class DetailScreen extends StatelessWidget {
                       const SizedBox(
                         height: 16,
                       ),
-                      const SizedBox(
-                        height: 100,
-                        //  durung isi iki
+                      // Sizedbox dibawah ini untuk membuat Dokumentasi galeri wisata
+                      SizedBox(
+                        height: 120,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: wisata.imageUrls.length,
+                          itemBuilder: (context, index) {
+                            return Padding(
+                              padding: const EdgeInsets.only(right: 15),
+                              child: GestureDetector(
+                                onTap: () {},
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(12),
+                                    border: Border.all(
+                                      color: Colors.deepOrange.shade100,
+                                      width: 2,
+                                    ),
+                                  ),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(15),
+                                    child: CachedNetworkImage(
+                                      imageUrl: wisata.imageUrls[index],
+                                      height: 150,
+                                      width: 150,
+                                      fit: BoxFit.cover,
+                                      placeholder: (context, url) => Container(
+                                        height: 150,
+                                        width: 150,
+                                        color: Colors.deepOrange[50],
+                                      ),
+                                      errorWidget: (context, url, error) =>
+                                          const Icon(Icons.error),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
                       ),
                       const SizedBox(
                         height: 4,
