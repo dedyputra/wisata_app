@@ -1,5 +1,5 @@
 # wisata_app
-Dicoding Flutter
+Wisata sidoarjo dengan version android, wisata tersebut banyak dikunjungi oleh masyarakat jadi obyek wisata tervaforit
 
 A new Flutter project.
 
