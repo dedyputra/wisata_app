@@ -5,7 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 // import 'package:photo_view/photo_view.dart';
 
 // detail Screen App
-// ngoding flutter asik
 class DetailScreen extends StatelessWidget {
   final Wisata wisata;
   const DetailScreen({super.key, required this.wisata});
@@ -48,7 +47,7 @@ class DetailScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              // Membuat Info info hehe
+              // Membuat Info
               // Atas
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
