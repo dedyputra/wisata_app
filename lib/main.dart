@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      title: 'Objek Wisata Sidoarjo',
+      title: 'Wisata Sidoarjo',
       home: DetailScreen(
         wisata: wisataList[0],
       ),
