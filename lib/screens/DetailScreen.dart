@@ -3,7 +3,7 @@ import 'package:wisata_app/models/wisata.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// detail Screen App
+// membuat detail Screen App
 class DetailScreen extends StatelessWidget {
   final Wisata wisata;
   const DetailScreen({super.key, required this.wisata});

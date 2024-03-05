@@ -1,7 +1,7 @@
 import 'package:wisata_app/models/wisata.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
-// Data Wisata Di Kabupaten Sidoarjo Jatim
+// Data Wisata Di Kabupaten Sidoarjo Jawa tmur
 
 var wisataList = [
 // wisata 1
