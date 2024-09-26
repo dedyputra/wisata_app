@@ -12,7 +12,20 @@ class _HomeScreensState extends State<HomeScreens> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        children: [],
+        children: [
+          // Menambahkan Image Homepage
+          Image.asset(
+            "assets/images/background.jpg",
+            height: double.infinity,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+          Column(
+            children: [
+              // Text("Selamat Datang", style: ,)
+            ],
+          ),
+        ],
       ),
     );
   }
