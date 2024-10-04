@@ -30,6 +30,7 @@ class _HomeScreensState extends State<HomeScreens> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    const Spacer(),
                     const Text(
                       "Sidoarjo East Java",
                       style: TextStyle(
@@ -42,7 +43,7 @@ class _HomeScreensState extends State<HomeScreens> {
                       height: 10,
                     ),
                     Text(
-                      "Selamat Datang Di Wisata Sidoarjo Jawa Timur",
+                      "Welcome to Wisata Sidoarjo Jatim",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: kWhiteClr,
@@ -51,15 +52,28 @@ class _HomeScreensState extends State<HomeScreens> {
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 10,
                     ),
                     Container(
-                      height: 55,
+                      height: 50,
                       width: double.infinity,
-                      decoration: const BoxDecoration(
+                      // membuat icon button get started
+                      decoration: BoxDecoration(
                         color: KWhiteClr,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: const Center(
+                        child: Text(
+                          "Get Started",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                       ),
                     ),
+                    const SizedBox()
                   ],
                 ),
               ),
