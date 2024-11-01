@@ -23,7 +23,7 @@ class _HomeScreensState extends State<HomeScreens> {
           ),
           Column(
             children: [
-              Text(
+              const Text(
                 "Welcome to Wisata Sidoarjo Jatim",
                 textAlign: TextAlign.center,
                 style: TextStyle(
