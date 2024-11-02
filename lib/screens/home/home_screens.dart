@@ -21,9 +21,9 @@ class _HomeScreensState extends State<HomeScreens> {
             width: double.infinity,
             fit: BoxFit.cover,
           ),
-          Column(
+          const Column(
             children: [
-              const Text(
+              Text(
                 "Welcome to Wisata Sidoarjo Jatim",
                 textAlign: TextAlign.center,
                 style: TextStyle(
