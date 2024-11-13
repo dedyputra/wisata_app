@@ -21,18 +21,26 @@ class _HomeScreensState extends State<HomeScreens> {
             width: double.infinity,
             fit: BoxFit.cover,
           ),
-          const Column(
-            children: [
-              Text(
-                "Welcome to Wisata Sidoarjo Jatim",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  // color: ,
-                  fontSize: 16,
-                  height: 1.6,
-                ),
+
+          const SafeArea(
+            child: Center(
+              child: Column(
+                children: [
+                  Text(
+                    "Welcome to",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: KWhiteClr,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Text(
+                    "Wisata Sidoarjo Jatim",
+                    style: TextStyle(color: KWhiteClr),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ],
       ),
