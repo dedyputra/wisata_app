@@ -1,4 +1,9 @@
-import 'package:flutter/material.dart' show Color;
+import 'package:flutter/material.dart';
 
-const Color KPrimaClr = Color(0xffd99156);
-const Color KWhiteClr = Color.fromARGB(255, 255, 255, 255);
+const String kFontFamily = 'Poppins';
+
+const kHeadingStyle = TextStyle(
+    fontFamily: kFontFamily, fontSize: 24, fontWeight: FontWeight.bold);
+const kBodyTextStyle = TextStyle(fontFamily: kFontFamily, fontSize: 16);
+const kButtonTextStyle = TextStyle(
+    fontFamily: kFontFamily, fontSize: 18, fontWeight: FontWeight.w600);

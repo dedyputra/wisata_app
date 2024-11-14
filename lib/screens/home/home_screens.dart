@@ -30,13 +30,18 @@ class _HomeScreensState extends State<HomeScreens> {
                     "Welcome to",
                     style: TextStyle(
                       fontSize: 30,
-                      color: KWhiteClr,
+                      fontFamily: kFontFamily,
                       fontWeight: FontWeight.w600,
+                      color: Colors.white,
                     ),
                   ),
                   Text(
                     "Wisata Sidoarjo Jatim",
-                    style: TextStyle(color: KWhiteClr),
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontFamily: kFontFamily,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),
