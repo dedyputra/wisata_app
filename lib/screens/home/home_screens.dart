@@ -22,28 +22,52 @@ class _HomeScreensState extends State<HomeScreens> {
             fit: BoxFit.cover,
           ),
 
-          const SafeArea(
+          SafeArea(
             child: Center(
-              child: Column(
-                children: [
-                  Text(
-                    "Welcome to",
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontFamily: kFontFamily,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text(
+                      "Welcome to",
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontFamily: kFontFamily,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                  Text(
-                    "Wisata Sidoarjo Jatim",
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontFamily: kFontFamily,
-                      color: Colors.white,
+                    const SizedBox(
+                      height: 15,
                     ),
-                  ),
-                ],
+                    const Text(
+                      "Wisata Sidoarjo Jatim",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontFamily: kFontFamily,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    // get started container awal
+                    Container(
+                      height: 55,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(100),
+                      ),
+                      child: Row(
+                        children: [],
+                      ),
+                    ),
+                    // get started container akhir
+                  ],
+                ),
               ),
             ),
           ),

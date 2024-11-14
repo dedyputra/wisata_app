@@ -1,3 +1,5 @@
+// tinggal panggil variabelnya oke semangat :)
+
 import 'package:flutter/material.dart';
 
 const String kFontFamily = 'Poppins';
