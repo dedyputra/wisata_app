@@ -62,7 +62,24 @@ class _HomeScreensState extends State<HomeScreens> {
                         borderRadius: BorderRadius.circular(100),
                       ),
                       child: Row(
-                        children: [],
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/icons/started.png",
+                            height: 40,
+                            width: 40,
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          const Text(
+                            "Get Started",
+                            style: TextStyle(
+                                fontFamily: kFontFamily,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
                       ),
                     ),
                     // get started container akhir
