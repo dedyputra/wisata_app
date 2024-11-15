@@ -26,12 +26,15 @@ class _HomeScreensState extends State<HomeScreens> {
             child: Center(
               child: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: 20, horizontal: 15),
+                    const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Spacer(),
+                    // Judul aplikasi
                     const Text(
-                      "Welcome to",
+                      "Welcome to Wisata Sidoarjo Jatim",
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 30,
                         fontFamily: kFontFamily,
@@ -40,25 +43,32 @@ class _HomeScreensState extends State<HomeScreens> {
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 20,
                     ),
-                    const Text(
-                      "Wisata Sidoarjo Jatim",
-                      style: TextStyle(
-                        fontSize: 24,
-                        fontFamily: kFontFamily,
-                        color: Colors.white,
+                    // Caption HomePage
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 20.0),
+                      child: Text(
+                        "Jelajahi keindahan Sidoarjo, Jawa Timur! "
+                        "Temukan destinasi wisata menarik, "
+                        "dan pengalaman tak terlupakan hanya dalam satu aplikasi.",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontFamily: kFontFamily,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                     const SizedBox(
-                      height: 15,
+                      height: 30,
                     ),
-                    // get started container awal
+                    // Tombol Get Started Login
                     Container(
                       height: 55,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: Colors.white70,
                         borderRadius: BorderRadius.circular(100),
                       ),
                       child: Row(
@@ -75,14 +85,17 @@ class _HomeScreensState extends State<HomeScreens> {
                           const Text(
                             "Get Started",
                             style: TextStyle(
-                                fontFamily: kFontFamily,
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600),
+                              fontFamily: kFontFamily,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ],
                       ),
                     ),
-                    // get started container akhir
+                    const SizedBox(
+                      height: 20,
+                    ),
                   ],
                 ),
               ),
