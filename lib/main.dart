@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wisata_app/screens/home/home_screens.dart';
+import 'package:wisata_app/screens/welcome/home_screens.dart';
 
 void main() {
   runApp(const MyApp());

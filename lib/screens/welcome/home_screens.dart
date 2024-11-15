@@ -56,6 +56,7 @@ class _HomeScreensState extends State<HomeScreens> {
                         style: TextStyle(
                           fontSize: 16,
                           fontFamily: kFontFamily,
+                          fontWeight: FontWeight.w500,
                           color: Colors.white,
                         ),
                       ),
@@ -93,8 +94,8 @@ class _HomeScreensState extends State<HomeScreens> {
                         ],
                       ),
                     ),
-                    const SizedBox(
-                      height: 20,
+                    SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.05,
                     ),
                   ],
                 ),
