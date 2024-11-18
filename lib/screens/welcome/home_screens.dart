@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_app/screens/Home/home_page.dart';
 import 'package:wisata_app/utilities/colors.dart';
 
 class HomeScreens extends StatefulWidget {
@@ -65,33 +66,41 @@ class _HomeScreensState extends State<HomeScreens> {
                       height: 30,
                     ),
                     // Tombol Get Started Login
-                    Container(
-                      height: 55,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: Colors.white70,
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "assets/icons/started.png",
-                            height: 40,
-                            width: 40,
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          const Text(
-                            "Get Started",
-                            style: TextStyle(
-                              fontFamily: kFontFamily,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HomePage()));
+                      },
+                      child: Container(
+                        height: 55,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Colors.white70,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "assets/icons/started.png",
+                              height: 40,
+                              width: 40,
                             ),
-                          ),
-                        ],
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            const Text(
+                              "Get Started",
+                              style: TextStyle(
+                                fontFamily: kFontFamily,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     SizedBox(
