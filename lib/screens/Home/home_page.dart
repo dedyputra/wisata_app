@@ -13,17 +13,18 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
           child: Column(
             children: [
+              // Halaman App Bar
               Row(
                 children: [
-                  CircleAvatar(
-                    radius: 35,
+                  const CircleAvatar(
+                    radius: 30,
                     backgroundImage: AssetImage("assets/images/boy.png"),
                   ),
                   const SizedBox(
                     width: 17,
                   ),
                   RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                       text: "Hello Welcome, ",
                       style: TextStyle(
                           fontFamily: kFontFamily, color: kBlackColor),
@@ -39,6 +40,26 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              // Search untuk mencari wisata
+              const SizedBox(
+                height: 15,
+              ),
+              const Text(
+                "Explore Wisata Sidoarjo",
+                style: TextStyle(
+                    fontFamily: kFontFamily,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 27),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  hintText: "Silahkan Cari Wisata",
+                  suffixIcon: Icon(Icons.search),
+                ),
               ),
             ],
           ),
