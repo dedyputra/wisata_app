@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:wisata_app/utilities/colors.dart';
 
 class HomePage extends StatefulWidget {
@@ -139,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   children: [
                     const Text(
-                      "Category",
+                      "Kategori Wisata",
                       style: TextStyle(
                         fontFamily: kFontFamily,
                         fontSize: 25,
@@ -148,24 +150,92 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
-                Material(
-                  elevation: 5,
-                  borderRadius: BorderRadius.circular(100),
-                  child: Container(
-                    height: 70,
-                    width: 150,
-                    decoration: BoxDecoration(
-                      color: kWhiteColor,
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                    child: Row(
-                      children: [
-                        CircleAvatar(),
-                      ],
-                    ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Container(
+                  height: 70,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Row(
+                        children: [
+                          KategoriCard(
+                            press: () {},
+                            image: "assets/icons/pantai.png",
+                            title: "Pantai",
+                          ),
+                          KategoriCard(
+                            press: () {},
+                            image: "assets/icons/taman.png",
+                            title: "Taman",
+                          ),
+                          KategoriCard(
+                            press: () {},
+                            image: "assets/icons/candi.jpg",
+                            title: "Candi",
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+// class Kategori card widget
+class KategoriCard extends StatelessWidget {
+  final String title, image;
+  final VoidCallback press;
+  const KategoriCard({
+    super.key,
+    required this.image,
+    required this.press,
+    required this.title,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(right: 10),
+      child: InkWell(
+        onTap: press,
+        child: Material(
+          elevation: 5,
+          borderRadius: BorderRadius.circular(100),
+          child: Container(
+            height: 60,
+            decoration: BoxDecoration(
+              color: kWhiteColor,
+              borderRadius: BorderRadius.circular(100),
+            ),
+            child: Padding(
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 15, vertical: 8.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    backgroundImage: AssetImage(image),
+                  ),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontFamily: kFontFamily,
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
