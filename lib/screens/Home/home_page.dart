@@ -164,16 +164,25 @@ class _HomePageState extends State<HomePage> {
                             press: () {},
                             image: "assets/icons/pantai.png",
                             title: "Pantai",
+                            isDark: isDark, // Parameter diteruskan
                           ),
                           KategoriCard(
                             press: () {},
                             image: "assets/icons/taman.png",
                             title: "Taman",
+                            isDark: isDark,
                           ),
                           KategoriCard(
                             press: () {},
                             image: "assets/icons/candi.jpg",
                             title: "Candi",
+                            isDark: isDark,
+                          ),
+                          KategoriCard(
+                            press: () {},
+                            image: "assets/icons/alun_alun.jpg",
+                            title: "Alun Alun",
+                            isDark: isDark,
                           ),
                         ],
                       ),
@@ -193,11 +202,14 @@ class _HomePageState extends State<HomePage> {
 class KategoriCard extends StatelessWidget {
   final String title, image;
   final VoidCallback press;
+  final bool isDark; // Tambahkan parameter baru untuk mode gelap
+
   const KategoriCard({
     super.key,
     required this.image,
     required this.press,
     required this.title,
+    required this.isDark, // Parameter isDark harus diisi
   });
 
   @override
@@ -212,7 +224,8 @@ class KategoriCard extends StatelessWidget {
           child: Container(
             height: 60,
             decoration: BoxDecoration(
-              color: kWhiteColor,
+              color:
+                  isDark ? Colors.grey[850] : kWhiteColor, // Background dinamis
               borderRadius: BorderRadius.circular(100),
             ),
             child: Padding(
@@ -228,10 +241,12 @@ class KategoriCard extends StatelessWidget {
                   ),
                   Text(
                     title,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: kFontFamily,
                       fontSize: 17,
                       fontWeight: FontWeight.bold,
+                      color:
+                          isDark ? Colors.white : Colors.black, // Logika warna
                     ),
                   ),
                 ],
