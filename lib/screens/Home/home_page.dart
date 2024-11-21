@@ -212,44 +212,41 @@ class _HomePageState extends State<HomePage> {
 
                 Container(
                   height: 350,
-                  child: ListView(
-                    children: [
-                      Row(
-                        children: [
-                          Material(
-                            elevation: 5,
-                            borderRadius: BorderRadius.circular(20),
-                            child: Container(
-                              height: 320,
-                              width: 200,
-                              decoration: BoxDecoration(
-                                color: kWhiteColor,
-                                borderRadius: BorderRadius.circular(20),
-                              ),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Container(
-                                      height: 150,
-                                      width: double.infinity,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          image: DecorationImage(
-                                              fit: BoxFit.cover,
-                                              image: AssetImage(
-                                                  "assets/images/AlasPrambon.jpg"))),
-                                    ),
+                  child: ListView.builder(itemBuilder: (context, index) {
+                    return Row(
+                      children: [
+                        Material(
+                          elevation: 5,
+                          borderRadius: BorderRadius.circular(20),
+                          child: Container(
+                            height: 320,
+                            width: 200,
+                            decoration: BoxDecoration(
+                              color: kWhiteColor,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    height: 150,
+                                    width: double.infinity,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(20),
+                                        image: DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: AssetImage(
+                                                "assets/images/AlasPrambon.jpg"))),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
+                        ),
+                      ],
+                    );
+                  }),
                 ),
               ],
             ),
