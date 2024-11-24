@@ -84,7 +84,7 @@ class _HomeScreensState extends State<HomeScreens> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Image.asset(
-                              "assets/icons/started.png",
+                              "assets/icons/icon_google.png",
                               height: 40,
                               width: 40,
                             ),
@@ -92,7 +92,7 @@ class _HomeScreensState extends State<HomeScreens> {
                               width: 10,
                             ),
                             const Text(
-                              "Get Started",
+                              "Login Dengan Akun Google",
                               style: TextStyle(
                                 fontFamily: kFontFamily,
                                 fontSize: 16,

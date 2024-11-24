@@ -61,7 +61,7 @@ flutter:
     - assets/images/
     - assets/icons/
     - assets/images/sda.jpg
-    - assets/icons/started.png
+    - assets/icons/icon_google.png
     - assets/images/boy.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
