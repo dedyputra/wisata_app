@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:wisata_app/data/wisata_data.dart';
+import 'package:wisata_app/models/wisata.dart';
 import 'package:wisata_app/screens/Home/widgets/kategori_card.dart';
 import 'package:wisata_app/utilities/colors.dart';
 
@@ -211,45 +213,63 @@ class _HomePageState extends State<HomePage> {
 
                 Container(
                   height: 350,
-                  child: ListView.builder(itemBuilder: (context, index) {
-                    return Row(
-                      children: [
-                        Material(
-                          elevation: 5,
-                          borderRadius: BorderRadius.circular(20),
-                          child: Container(
-                            height: 320,
-                            width: 200,
-                            decoration: BoxDecoration(
-                              color: kWhiteColor,
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Container(
-                                    height: 150,
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
-                                        image: DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: AssetImage(
-                                                "assets/images/AlasPrambon.jpg"))),
-                                  ),
-                                ),
-                              ],
-                            ),
+                  child: ListView.builder(
+                      itemCount: wisataList.length,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 15),
+                          child: Row(
+                            children: [
+                              RekomendasiCard(),
+                            ],
                           ),
-                        ),
-                      ],
-                    );
-                  }),
+                        );
+                      }),
                 ),
               ],
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+// Rekomendasi Card Widget
+
+class RekomendasiCard extends StatelessWidget {
+  const RekomendasiCard({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      elevation: 5,
+      borderRadius: BorderRadius.circular(20),
+      child: Container(
+        height: 270,
+        width: 200,
+        decoration: BoxDecoration(
+          color: kWhiteColor,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 150,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("assets/images/AlasPrambon.jpg"))),
+              ),
+            ),
+          ],
         ),
       ),
     );
