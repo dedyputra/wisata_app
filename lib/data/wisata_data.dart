@@ -1,5 +1,3 @@
-// jumlah list wisata sidoarjo
-
 import 'package:wisata_app/models/wisata.dart' show Wisata;
 
 var wisataList = [

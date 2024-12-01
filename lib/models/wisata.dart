@@ -1,5 +1,3 @@
-// data wisata sidoarjo
-
 class Wisata {
   final String name;
   final String location;
