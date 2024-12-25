@@ -5,14 +5,14 @@ import 'package:wisata_app/utilities/colors.dart';
 class KategoriCard extends StatelessWidget {
   final String title, image;
   final VoidCallback press;
-  final bool isDark; // Tambahkan parameter baru untuk mode gelap
+  final bool isDark;
 
   const KategoriCard({
     super.key,
     required this.image,
     required this.press,
     required this.title,
-    required this.isDark, // Parameter isDark harus diisi
+    required this.isDark,
   });
 
   @override
